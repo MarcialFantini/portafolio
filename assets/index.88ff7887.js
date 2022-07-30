@@ -78,7 +78,7 @@ top: 0;
     margin: 0;
     padding: 0;
 
-`,zm="/assets/MF.cb2c9209.png";var cs={exports:{}},No={};/**
+`,zm="/portafolio/assets/MF.cb2c9209.png";var cs={exports:{}},No={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
@@ -145,7 +145,7 @@ top: 0;
 `;Ee.span`
     margin: 10px;
     display: block;
-`;const Um="/assets/bueno.71d31840.gif",Oa=()=>ht(Mm,{children:[ee(Dm,{children:ee(jm,{src:Um})}),ht(Fm,{children:[ee(Ra,{children:ee(La,{children:"Hola Soy marcial!"})}),ee(Ra,{children:ht(La,{children:[ee("span",{children:"Hola!"}),"Soy marcial!"]})})]})]}),Bm=Ee.div`
+`;const Um="/portafolio/assets/bueno.71d31840.gif",Oa=()=>ht(Mm,{children:[ee(Dm,{children:ee(jm,{src:Um})}),ht(Fm,{children:[ee(Ra,{children:ee(La,{children:"Hola Soy marcial!"})}),ee(Ra,{children:ht(La,{children:[ee("span",{children:"Hola!"}),"Soy marcial!"]})})]})]}),Bm=Ee.div`
     width: 80%;
     height: auto;
 
@@ -216,4 +216,4 @@ top: 0;
     color: black;
     padding: 0 30px 10px 30px;
     
-`,Wm="/assets/code1.a5cd3eca.jpg",Qm="/assets/code2.f1fa80f6.jpg",Ym="/assets/code3.cd45812e.jpg",Km=()=>ht(Bm,{children:[ee(Hm,{children:"En que te puedo ayudar?"}),ht(Vm,{children:[ht(li,{children:[ee(oi,{children:ee(ii,{src:Wm})}),ee(ui,{children:"Maquetar tus proyectos usando las ultimas herramientas del mercado como ReactJS."})]}),ht(li,{children:[ee(oi,{children:ee(ii,{src:Qm})}),ee(ui,{children:"Crear e implementar nuevas funcionalidades que necesitas en tu proyectos."})]}),ht(li,{children:[ee(oi,{children:ee(ii,{src:Ym})}),ee(ui,{children:"Revisar tu c\xF3digo en busca de errores y entregarte un c\xF3digo de muy buena calidad."})]})]})]});function Gm(){return Et.exports.useState(0),ht("div",{children:[ee(Im,{}),ee(Oa,{}),ee(Km,{}),ee(Oa,{})]})}si.createRoot(document.getElementById("root")).render(ee(Ar.StrictMode,{children:ee(Gm,{})}));
+`,Wm="/portafolio/assets/code1.a5cd3eca.jpg",Qm="/portafolio/assets/code2.f1fa80f6.jpg",Ym="/portafolio/assets/code3.cd45812e.jpg",Km=()=>ht(Bm,{children:[ee(Hm,{children:"En que te puedo ayudar?"}),ht(Vm,{children:[ht(li,{children:[ee(oi,{children:ee(ii,{src:Wm})}),ee(ui,{children:"Maquetar tus proyectos usando las ultimas herramientas del mercado como ReactJS."})]}),ht(li,{children:[ee(oi,{children:ee(ii,{src:Qm})}),ee(ui,{children:"Crear e implementar nuevas funcionalidades que necesitas en tu proyectos."})]}),ht(li,{children:[ee(oi,{children:ee(ii,{src:Ym})}),ee(ui,{children:"Revisar tu c\xF3digo en busca de errores y entregarte un c\xF3digo de muy buena calidad."})]})]})]});function Gm(){return Et.exports.useState(0),ht("div",{children:[ee(Im,{}),ee(Oa,{}),ee(Km,{}),ee(Oa,{})]})}si.createRoot(document.getElementById("root")).render(ee(Ar.StrictMode,{children:ee(Gm,{})}));
