@@ -7,9 +7,11 @@ export const ContainerServices = styled.div`
 
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 40px auto;
 
     gap: 40px;
+
+
 `
 
 export const TitleH4 = styled.h2`
@@ -20,11 +22,12 @@ export const TitleH4 = styled.h2`
     background: #E74C3C;
     color: whitesmoke;
 
-    padding: 30px;
+    padding: 35px;
 
     border: 5px solid black;
     border-radius: 10px;
     text-decoration: underline #A569BD;
+    
     
 `
 
@@ -75,8 +78,9 @@ export const Image = styled.img`
 `
 
 export const TextP = styled.p`
-    margin: 5px;
+    margin-bottom: auto;
     font-size: 2.4rem;
     color: black;
-    padding: 10px;
+    padding: 0 30px 10px 30px;
+    
 `
