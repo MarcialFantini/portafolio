@@ -202,7 +202,7 @@ top: 0;
 `,Vm="/portafolio/assets/MF.cb2c9209.png",Wm=()=>vt(Um,{children:[b(Bm,{src:Vm}),b(Hm,{children:"Marcial Fantini"})]}),Qm=Z.div`
     
     border-radius: 10px;
-    background-image: url(src/assets/cards/pc.jpg);
+    background-image: url(./src/assets/cards/pc.jpg);
     background-position: center;
     padding: 5%;
     width: 270px;
