@@ -1,74 +1,51 @@
 import styled from "styled-components";
 
-
-export const HeaderContainer = styled.div`
-    width: 80%;
+export const ContainerHeader = styled.div`
+    width: 100%;
     height: auto;
-    margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 5px;
-
-    margin: 20px auto;
-
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background: rgba(229,230,255);
+  
 `
 
-export const ContainerImg = styled.div`
-    height: 50vh;
-    overflow: hidden;
-
+export const TextContainer  = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    border: 5px solid black;
 
-    background: #A569BD;
-`
-
-export const Img = styled.img`
-    width: 95%;
-   
-
-   border-radius: 10px;
-    border: 4px solid black;
-`
-
-export const ContainerText = styled.div`
-    display: flex;
-    flex-direction: column;
+     width: 100%;
     height: 50vh;
-    gap: 10px;
-
-`
-
-export const Box = styled.div`
-    height: 50%;
-    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
 
     margin: auto;
-
-    background:#F5B041;
     
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-
-    border-radius: 10px;
-    border: 5px solid black;
 `
 
-export const TitleH2 = styled.h2`
-    font-size: 2.4rem;
+export const TitleH1 = styled.h1`
+    color: green;
+    font-size: 4rem;
+
+    margin:0 0 10px 0;
+   
+`
+export const TextP = styled.p`
+    font-size: 2rem;
+ 
     color: black;
-    margin: 30px auto;
-    padding: 0;
-
-    display: block;
 `
-export const Span = styled.span`
-    margin: 10px;
-    display: block;
+
+export const ContainerImage = styled.div`
+    
+    
+`
+
+export const ImageHeader = styled.img`
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 500px;
 `

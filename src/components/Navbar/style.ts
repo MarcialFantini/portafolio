@@ -17,7 +17,7 @@ top: 0;
     align-items: center;
 
     border-bottom: 5px solid black;
-
+    z-index: 100;
     box-shadow: 0 0 20px 10px black;
 `
 export const IconPerson = styled.img`

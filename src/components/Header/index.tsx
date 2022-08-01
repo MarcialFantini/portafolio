@@ -1,42 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import ReactPlayer from 'react-player'
-import { Box, ContainerImg, ContainerText, HeaderContainer, Img, Span, TitleH2 } from './style'
+import React from 'react'
+import { ContainerHeader, ContainerImage, ImageHeader, TextContainer, TextP, TitleH1 } from './style'
 
-import Bueno from '../../assets/bueno.gif'
-
+import person from '../../assets/person.svg'
 
 export const Header = () => {
-   
-
-    
-
   return (
-    <HeaderContainer>
-        <ContainerImg
-  
-        >
-            <Img
-            src={Bueno}
-            >
-            </Img>
+    <ContainerHeader>
+        <TextContainer>
+            <TitleH1>
+              Soy Marcial
+            </TitleH1>
+            <TextP>
+                Front End Developer
+            </TextP>
+        </TextContainer>
+        <ContainerImage>
+          <ImageHeader src={person}>
 
-            
-            
-        </ContainerImg>
-        <ContainerText>
-            <Box>
-            <TitleH2>
-                Hola
-                Soy marcial!
-            </TitleH2>
-            </Box>
-            <Box>
-            <TitleH2>
-                <span>Hola!</span>
-                Soy marcial!
-            </TitleH2>
-            </Box>
-        </ContainerText>
-    </HeaderContainer>
+          </ImageHeader>
+        </ContainerImage>
+    </ContainerHeader>
   )
 }

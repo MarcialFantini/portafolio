@@ -4,8 +4,9 @@ body{
     margin: 0;
     background: #ebe6ea;
     background-image: url(./assets/line.png);
-    background-size: 150px;
+    background-size: 200px;
     background-attachment: fixed;
+    
     padding-top:120px ;
     font-family: 'Roboto',
         sans-serif;
