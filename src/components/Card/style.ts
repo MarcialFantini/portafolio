@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerCard = styled.div`
     
     border-radius: 10px;
-    background-image: url(src/assets/cards/pc.jpg);
+    background-image: url(./src/assets/cards/pc.jpg);
     background-position: center;
     padding: 5%;
     width: 270px;

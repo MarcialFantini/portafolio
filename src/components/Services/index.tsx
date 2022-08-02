@@ -51,6 +51,7 @@ export const Services = () => {
         <ServicesCards>
             {List.map((item:CardProp)=>{
               return <Card
+              key={item.title}
               title={item.title}
               text={item.text}
               srcIcon={item.srcIcon}

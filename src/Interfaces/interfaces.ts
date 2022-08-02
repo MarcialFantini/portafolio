@@ -4,3 +4,10 @@ export interface CardProp {
     color:string,
     srcIcon:string,
 }
+
+export interface CardSkillProp{
+    title:string,
+    color:string,
+    src:string
+
+}
