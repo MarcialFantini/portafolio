@@ -1,11 +1,13 @@
 import React from 'react'
-import { TitleH1 } from '../Header/style'
+import { TitleFooter } from './style'
 import { ContainerFooter } from './style'
 
 export const Footer = () => {
   return (
-    <ContainerFooter>
-        <TitleH1>Hecho por Marcial Fantini</TitleH1>
-    </ContainerFooter>
+  
+      <ContainerFooter>
+        <TitleFooter>Hecho por Marcial Fantini</TitleFooter>
+        </ContainerFooter>
+    
   )
 }

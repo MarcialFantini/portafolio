@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface props{
+    state:boolean
+}
+
 export const ContainerHeader = styled.div`
     width: 100%;
     height: auto;
@@ -25,27 +29,57 @@ export const TextContainer  = styled.div`
     
 `
 
-export const TitleH1 = styled.h1`
-    color: green;
+export const TitleH1 = styled.h1<props>`
+    
     font-size: 4rem;
-
+    
     margin:0 0 10px 0;
+    color: ${props=>{
+        if(props.state){
+            return "green"
+        }else{
+            return "transparent"
+        }
+    }};
+   
+    transition: all 1s linear;
    
 `
-export const TextP = styled.p`
+export const TextP = styled.p<props>`
     font-size: 2rem;
  
-    color: black;
+    color: ${props=>{
+        if(props.state){
+            return "black"
+        }else{
+            return "transparent"
+        }
+    }};
+     
+    transition: all 1s linear;
 `
 
 export const ContainerImage = styled.div`
-    
-    
+    overflow: hidden;
+    position: relative;
+      width: 100%;
+    height: 50vh;
+    max-width: 400px;
+    max-height: 400px;
 `
 
-export const ImageHeader = styled.img`
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    max-height: 500px;
+export const ImageHeader = styled.img<props>`
+    
+    position: absolute;
+    left: ${props=>{
+        if(props.state){
+            return "-10%"
+        }else{
+            return "100%"
+        }
+    }};
+    top: 0;
+    height: 130%;
+    transition: all 1s ease-in-out;
+
 `

@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import { AboutMe } from './components/AboutMe'
+import { ContactMe } from './components/ContactMe'
 import { ContainerFooter } from './components/Footer/style'
 import { Header } from './components/Header'
 import { Navbar } from './components/Navbar'
@@ -20,7 +21,9 @@ function App() {
       <AboutMe></AboutMe>
       <Services></Services>
       <Skills></Skills>
+      <ContactMe></ContactMe>
       <ContainerFooter></ContainerFooter>
+      
       </div>
      
    

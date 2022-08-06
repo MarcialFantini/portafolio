@@ -2,21 +2,20 @@ import styled from "styled-components";
 
 export const ContainerAboutMe = styled.div`
     width: 90%;
-   
+    overflow: hidden;
     
    
-    height: 50vh;
+    height: auto;
+    
 
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
 
-     margin: 120px auto 400px auto;
+     margin: 120px auto ;
     row-gap: 70px;
     column-gap: -100px;
     
-    @media (min-width: 771px) {
-        margin: 120px auto ;
-    }
+    
 `
 export const Marco = styled.div`
   
@@ -52,8 +51,21 @@ export const Image = styled.img`
    
     width: 120%;
 `
+interface props{
+    inView:boolean
+}
 
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<props>`
+
+    position: relative;
+
+    left: ${props=>{
+        if(props.inView){
+            return "0"
+        }else{
+            return "90%"
+        }
+    }};
 
     display: flex;
     flex-direction: column;
@@ -66,7 +78,8 @@ export const TextContainer = styled.div`
     border: 5px solid black;
     box-shadow: 0 0 10px 1px black;
     
-   
+    transition: all .8s;
+    min-height: 300px;
 
 `
 export const TitleH = styled.h1`   

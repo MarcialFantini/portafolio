@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface propContainer{
     src:string,
     color:string
+    state:boolean
 }
 
 export const ContainerCardSkill = styled.div<propContainer>`
@@ -20,6 +21,16 @@ export const ContainerCardSkill = styled.div<propContainer>`
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    transform: scale(${props=>{
+        if(props.state){
+            return "1"
+        }else{
+            return "0.5"
+        }
+    }});
+    transition: all 1s;
 `
 
 export const TitleSkill = styled.h1`

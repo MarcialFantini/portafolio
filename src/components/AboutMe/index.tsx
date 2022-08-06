@@ -1,20 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { ContainerAboutMe, Image, Marco, MarcoAbsolute, Text, TextContainer, TitleH } from './style'
 import person from '../../assets/person.svg'
+import { useInView } from 'react-intersection-observer'
 
 export const AboutMe = () => {
-  return (
-    <ContainerAboutMe>
-      
-        <Marco>
-          <MarcoAbsolute>
-            <Image src={person}>
+  const [state,setState] = useState(false)
+  const {inView,ref} = useInView({threshold:0.1}) 
 
+  useEffect(()=>{
+    if(inView && !state){
+      setState(true)
+    }
+  },[inView])
+
+  return (
+    <ContainerAboutMe
+    
+   
+    >
+      
+        <Marco
+       
+        >
+          <MarcoAbsolute>
+            <Image 
+            
+            src={person}>
+              
           </Image>
           </MarcoAbsolute>
         </Marco>
-        <TextContainer>
+        <TextContainer
+        inView={state}
+          ref={ref}
+        >
           <TitleH>
             Sobre mi
           </TitleH>

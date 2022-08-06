@@ -5,12 +5,14 @@ export const ContainerFooter = styled.div`
     height: 120px;
 
     background: rgba(24,6,5,.5);
+    position: relative;
 
-
-    margin: 120px auto 0 auto;
+   
 `
 
 export const TitleFooter = styled.h1`
+    position: absolute;
+
     color: black;
     font-size: 2rem;
 `

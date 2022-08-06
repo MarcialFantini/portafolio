@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { CardProp } from '../../Interfaces/interfaces'
 import { Card } from '../Card'
 import { ContainerServices, ContainerText, Divider, ServicesCards, TextServices, TitleServices } from './style'
@@ -36,14 +37,29 @@ const List:CardProp[] = [
 ]
 
 export const Services = () => {
+  const [isView,setIsView] = useState(false)
+  const {inView,ref:services} = useInView({
+    threshold:1
+  })
+  useEffect(()=>{
+    if(inView && !isView){
+      setIsView(true)
+    }
+  },[inView])
   return (
     <ContainerServices>
         <ContainerText>
-            <TitleServices>
+            <TitleServices
+            ref={services}
+            >
                 Services
             </TitleServices>
-            <Divider></Divider>
-            <TextServices>
+            <Divider
+            isVisible={isView}
+            ></Divider>
+            <TextServices
+            isVisible={isView}
+            >
                 Estos son algunas de las funciones en que puedo realizar
                 en tus proyectos:
             </TextServices>
