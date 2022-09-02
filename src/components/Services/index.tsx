@@ -51,6 +51,7 @@ export const Services = () => {
         <ContainerText>
             <TitleServices
             ref={services}
+            isVisible={isView}
             >
                 Services
             </TitleServices>

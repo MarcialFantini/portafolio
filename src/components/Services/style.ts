@@ -38,14 +38,16 @@ export const TextServices = styled.p<props>`
 
 `
 
-export const TitleServices = styled.h1`
+export const TitleServices = styled.h1<props>`
     font-size: 4rem;
-    color: green;
+    color: ${props=>props.isVisible?"green":"white"};
     margin: 10px;
     text-align: start;
     background: white;
     border-radius: 10px;
     padding: 20px;
+    transition:all 1s;
+
 `
 
 export const Divider = styled.div<props>`
