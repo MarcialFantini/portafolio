@@ -24,7 +24,7 @@ export const Cube = () => {
       newCont = 0 
     }
     const newStep = "cube"+" "+ listStep[newCont]
-    console.log(newStep)
+   
     setState({
       step:newStep,
       cont:newCont,
@@ -36,7 +36,7 @@ export const Cube = () => {
   useEffect(()=>{
     setTimeout(()=>{
       moveFace()
-      console.log(state.step)
+  
     },1500)
   },[state])
   return (

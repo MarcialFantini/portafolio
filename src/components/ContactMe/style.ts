@@ -19,9 +19,9 @@ export const TitleContact = styled.h1`
 `
 
 export const ContainerSocial = styled.div`
-width: 90%;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 40px;
     
     margin: auto;
@@ -49,6 +49,11 @@ interface Card {
 
 
 export const Card = styled.div<Card>`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
     background: ${props=>{
         if(props.isView){
             return 'gold'

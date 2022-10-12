@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 
 import person from '../../assets/person.svg'
 
-export const Header = () => {
+export const Header = (props:{active:boolean}) => {
   const {
     inView,
     ref
@@ -20,6 +20,10 @@ export const Header = () => {
     <ContainerHeader>
         <TextContainer>
             <TitleH1
+            style={{
+              color:props.active?"green":"white"
+            }}
+
             ref={ref}
             state={state}
             >
@@ -34,8 +38,12 @@ export const Header = () => {
         <ContainerImage>
           <ImageHeader
           state={state}
-          src={person}>
-
+          src={person}
+          style={{
+            filter:props.active?"":"invert(100%)"
+          }}
+          >
+          
           </ImageHeader>
         </ContainerImage>
     </ContainerHeader>

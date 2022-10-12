@@ -35,6 +35,11 @@ export const Skills = () => {
             color='#c01af3cc'
             title=''
             />
+            <CardSkill
+            src='https://avatars.githubusercontent.com/u/18133?s=200&v=4'
+            color='#050101cc'
+            title=''
+            />
         </ContainerCards>
     </ContainerSkills>
   )

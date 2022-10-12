@@ -32,19 +32,31 @@ export const Marco = styled.div`
     z-index: 0;
     
 `
+interface activeAbsolute{
+    top:string
+}
 
-export const MarcoAbsolute = styled.div`
+
+export const MarcoAbsolute = styled.div<activeAbsolute>`
     height: 110%;
     width: 110%;
-     overflow: hidden;
-     position: absolute;
+    overflow: hidden;
+    position: absolute;
 
-    top: -60px;
+
+    
+    top: ${props=>props.top};
     left: 20px;
     background: white;
     border-radius: 10px;
-    border: 2px solid black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     box-shadow: 0 0 15px 1px black;
+
+    transition: all .7s;
     
 `
 export const Image = styled.img`
@@ -84,10 +96,12 @@ export const TextContainer = styled.div<props>`
 `
 export const TitleH = styled.h1`   
     text-align: center;
-    color: green;
+    color: pink;
     margin: 10px;
     font-size: 4rem;
-
+    background: grey;
+    padding: 20px;
+    border-radius: 10px;
 `
 export const Text = styled.p`
     width: 70%;

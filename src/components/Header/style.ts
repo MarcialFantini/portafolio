@@ -10,7 +10,12 @@ export const ContainerHeader = styled.div`
 
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    background: rgba(229,230,255);
+
+    min-height: 400px;
+
+    position: relative;
+    
+    backdrop-filter: blur(20px);
   
 `
 
@@ -66,6 +71,8 @@ export const ContainerImage = styled.div`
     height: 50vh;
     max-width: 400px;
     max-height: 400px;
+
+    
 `
 
 export const ImageHeader = styled.img<props>`
@@ -80,6 +87,6 @@ export const ImageHeader = styled.img<props>`
     }};
     top: 0;
     height: 130%;
-    transition: all 1s ease-in-out;
-
+    transition: left 1s ease-in-out,filter 0.3s linear;
+    backdrop-filter: invert(80%);
 `

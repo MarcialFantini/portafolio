@@ -23,7 +23,9 @@ export const AboutMe = () => {
         <Marco
        
         >
-          <MarcoAbsolute>
+          <MarcoAbsolute
+          top={state?"-35px":"-200%"}
+          >
             <Image 
             
             src={person}>
@@ -39,10 +41,7 @@ export const AboutMe = () => {
             Sobre mi
           </TitleH>
           <Text>
-            Soy un desarrollador de codigo Front End. 
-           Podre hacer tus maquetaciones, animaciones 
-            y funcionalidades graficas que necesitas en tu 
-            proyecto.
+           Desarrollador Front End experiencia en creación de páginas responsivas, utilizando tecnologías web como Html5, Css3, Javascript, Git, ReactJs, Redux Js, Typescript y Styled-components. Experiencias maquetando y animando diseños para mejor experiencia de usuario. Habilidad de consumos de servicios Rest y promesas asíncronas por protocolo http.
           </Text>
           
         </TextContainer>

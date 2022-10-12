@@ -22,9 +22,12 @@ export const TitleSkills = styled.h1`
 `
 
 export const ContainerCards = styled.div`
-width: 100%;
+    min-height: 200px;
+    
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
     justify-items: center;
-    gap: 40px;
+    gap: 20px;
+
 `

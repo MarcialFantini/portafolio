@@ -7,7 +7,7 @@ export const Creativity = () => {
     <div className='container'>
         <div className='containerText'>
             <h1>Creatividad</h1>
-            <p>Soy creativo y me encanta hacer animaciones!</p>
+            <p>Cuento con una espectacular creatividad para resolver los problemas que tengas.</p>
         </div>
         <div>
             <Cube></Cube>

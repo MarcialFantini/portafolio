@@ -9,7 +9,8 @@
 
 .containerText {
     font-size: 2rem;
-  
+    
+    padding: 20px;
 
     display: flex;
     flex-direction: column;

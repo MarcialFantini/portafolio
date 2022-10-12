@@ -8,9 +8,9 @@ interface propContainer{
 
 export const ContainerCardSkill = styled.div<propContainer>`
     border-radius: 10px;
-
-    width: 320px;
-    height: 320px;
+    min-height: 250px;
+    width: 100%;
+    height: 100%;
 
     background-image: url(${props=>props.src});
     background-color: ${props=>props.color};
@@ -35,7 +35,7 @@ export const ContainerCardSkill = styled.div<propContainer>`
 
 export const TitleSkill = styled.h1`
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
     text-decoration: underline ;
    
     
